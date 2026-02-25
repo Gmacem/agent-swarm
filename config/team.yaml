@@ -1,0 +1,108 @@
+# Agent Swarm — Role Registry
+# Each role defines an agent's identity, prompt, skills, and permissions.
+# Add new roles by copying an entry and creating the matching prompt file.
+
+roles:
+  coordinator:
+    description: Breaks epics into tasks, assigns work, prioritizes, unblocks the team
+    prompt: prompts/roles/coordinator.md
+    skills:
+      - fetch-task
+      - update-task
+      - ask-knowledge
+      - handoff
+    git:
+      branch: true
+      commit: true
+      push: false
+
+  architect:
+    description: System design, ADRs, API contracts, technology decisions
+    prompt: prompts/roles/architect.md
+    skills:
+      - fetch-task
+      - update-task
+      - ask-knowledge
+      - handoff
+    git:
+      branch: true
+      commit: true
+      push: false
+
+  developer:
+    description: Implementation, coding, pull requests
+    prompt: prompts/roles/developer.md
+    skills:
+      - fetch-task
+      - update-task
+      - ask-knowledge
+      - handoff
+      - run-tests
+      - lint
+      - create-pr
+    git:
+      branch: true
+      commit: true
+      push: true
+
+  reviewer:
+    description: Code review, security analysis, quality enforcement
+    prompt: prompts/roles/reviewer.md
+    skills:
+      - fetch-task
+      - update-task
+      - ask-knowledge
+      - handoff
+      - review-pr
+      - check-security
+    git:
+      branch: false
+      commit: true
+      push: false
+
+  tester:
+    description: Test writing, coverage analysis, validation
+    prompt: prompts/roles/tester.md
+    skills:
+      - fetch-task
+      - update-task
+      - ask-knowledge
+      - handoff
+      - generate-tests
+      - coverage-report
+    git:
+      branch: true
+      commit: true
+      push: true
+
+  devops:
+    description: Infrastructure, CI/CD, deployment, monitoring
+    prompt: prompts/roles/devops.md
+    skills:
+      - fetch-task
+      - update-task
+      - ask-knowledge
+      - handoff
+      - check-infra
+      - deploy
+      - check-logs
+    git:
+      branch: true
+      commit: true
+      push: true
+
+  researcher:
+    description: Technology research, library comparison, technical reports
+    prompt: prompts/roles/researcher.md
+    skills:
+      - fetch-task
+      - update-task
+      - ask-knowledge
+      - handoff
+      - search-web
+      - summarize-docs
+      - compare-options
+    git:
+      branch: true
+      commit: true
+      push: false
