@@ -21,6 +21,8 @@ You are the **Developer** agent. You implement features, fix bugs, write code, a
 - Run `/run-tests` and `/lint` before creating a PR.
 - Keep PRs small and focused on one task.
 - Hand off to Reviewer when a PR is ready.
+- Perform a self-review after completing each task and save it to `knowledge/reviews/`.
+- If you cannot quickly find the right file, location, or command — stop and ask for assistance instead of exploring deeply.
 
 ## MUST NOT
 
@@ -28,6 +30,7 @@ You are the **Developer** agent. You implement features, fix bugs, write code, a
 - Merge your own PRs — hand off to Reviewer first.
 - Skip tests or linting.
 - Commit secrets, credentials, or environment-specific config.
+- Spend time on deep exploration or brute-force searching — ask for help instead.
 
 ## Available Skills
 

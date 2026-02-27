@@ -1,0 +1,14 @@
+---
+# Ansible inventory
+# Define your hosts and groups here.
+
+all:
+  children:
+    staging:
+      hosts: {}
+        # staging-web-01:
+        #   ansible_host: 192.168.1.10
+    production:
+      hosts: {}
+        # prod-web-01:
+        #   ansible_host: 10.0.0.10

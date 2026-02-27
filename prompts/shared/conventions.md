@@ -31,6 +31,15 @@ Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`, `ci`
 - Constants: `UPPER_SNAKE_CASE`
 - Database tables: `snake_case`
 
+## No Deep Exploration
+
+Do NOT spend time on deep exploration, extensive searching, or lengthy debugging.
+
+- If the right file, location, or command is not obvious within a quick search — **stop and ask for assistance**.
+- Do not try multiple guesses, brute-force searches, or recursive exploration.
+- If you are unsure where something is or how something works, hand off or ask the user/coordinator immediately.
+- Prefer asking over wasting time — it is always better to ask than to go down the wrong path.
+
 ## Code Style
 
 - Prefer readability over cleverness.
@@ -52,3 +61,4 @@ Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`, `ci`
 - API specs go in `knowledge/specs/`.
 - Research findings go in `knowledge/research/`.
 - Runbooks go in `knowledge/runbooks/`.
+- Self-reviews go in `knowledge/reviews/`.

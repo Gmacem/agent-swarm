@@ -23,4 +23,6 @@ Every agent in this repo MUST follow these rules.
 - Follow the conventions in `prompts/shared/conventions.md`.
 - Follow the communication protocol in `prompts/shared/communication.md`.
 - If you are blocked, update your task with the blocker and hand off to the appropriate role.
-- Keep knowledge files up to date — decisions go in `knowledge/decisions/`, specs in `knowledge/specs/`, research in `knowledge/research/`.
+- Keep knowledge files up to date — decisions go in `knowledge/decisions/`, specs in `knowledge/specs/`, research in `knowledge/research/`, self-reviews go in `knowledge/reviews/`.
+- After completing any task, perform a self-review and save it to `knowledge/reviews/TASK-<id>-<role>.md`.
+- Do NOT do deep exploration. If the right file, location, or command is not immediately obvious — stop and ask for assistance.

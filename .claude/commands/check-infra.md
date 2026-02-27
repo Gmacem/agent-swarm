@@ -8,13 +8,14 @@ Check the status of infrastructure and services.
 
 ## Instructions
 
-1. Check the relevant infrastructure components:
+1. Use Ansible inventory from `ansible/inventory/hosts.yaml` to identify target hosts.
+2. Check the relevant infrastructure components:
    - Service health and uptime.
    - Resource utilization (CPU, memory, disk).
    - Database connectivity and performance.
    - External service dependencies.
    - SSL certificate expiry.
-2. Check for recent alerts or anomalies.
-3. Report using the infrastructure report format from `prompts/roles/devops.md`.
-4. Flag anything that needs immediate attention.
-5. Update your task with findings.
+3. Check for recent alerts or anomalies.
+4. Report using the infrastructure report format from `prompts/roles/devops.md`.
+5. Flag anything that needs immediate attention.
+6. Update your task with findings.

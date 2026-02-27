@@ -13,7 +13,8 @@ Run a deployment to the specified environment.
    - Check that the target environment is healthy (`/check-infra`).
    - Confirm the deployment target with the user if it's production.
 2. **Deploy:**
-   - Run the deployment process as defined in the project's deployment config.
+   - Use Ansible playbooks from `ansible/playbooks/` with inventory from `ansible/inventory/hosts.yaml`.
+   - Run the appropriate playbook for the target environment.
    - Monitor the deployment for errors.
 3. **Post-deploy checks:**
    - Verify the service is healthy after deployment.

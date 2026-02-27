@@ -9,8 +9,36 @@ When working on a task, update it at these checkpoints:
 2. **Progress** — Meaningful progress or a new finding. Add a note with what changed.
 3. **Blocked** — You hit a blocker. Describe the blocker, tag the role that can unblock you.
 4. **Done** — Work is complete. Set status to `done`, summarize what was delivered.
+5. **Self-Review** — After completing the task, write a self-review and save it to `knowledge/reviews/`.
 
 Use `/update-task` to record each checkpoint.
+
+## Self-Review
+
+Every agent MUST perform a self-review after completing a task. Save it to `knowledge/reviews/TASK-<id>-<role>.md`.
+
+```markdown
+# Self-Review: TASK-<id> — <role>
+
+**Date:** <date>
+**Task:** <task title>
+**Role:** <role>
+
+## What Was Done
+<brief summary of completed work>
+
+## What Went Well
+- <positive outcome or good decision>
+
+## What Could Be Improved
+- <mistake, inefficiency, or missed item>
+
+## Blockers Encountered
+- <any blockers and how they were resolved, or "None">
+
+## Lessons Learned
+- <takeaway for future tasks>
+```
 
 ## Handoffs
 
